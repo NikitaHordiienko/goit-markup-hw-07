@@ -1,0 +1,44 @@
+.work {
+    padding-top: 47px;
+}
+
+.work-type {
+    display: flex;
+    gap: 30px;
+}
+
+.work-type-description {
+    display: block;
+}
+
+.work-type-description-photo {
+    display: block;
+}
+
+.work-type-thumb {
+    position: relative;
+    height: 294px;
+}
+
+.work-type-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    background-color: var(--description-bgc-color);
+}
+
+.work-type-title {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+    text-align: center;
+
+    color: var(--primary-background-color);
+
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+}
