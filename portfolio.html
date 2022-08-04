@@ -11,33 +11,33 @@
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="page-header">
         <div class="container navigation">
-            <nav class="main-nav">
-                <a href="./index.html" lang="en" class="logo"><span class="logo-part">Web</span>Studio</a>
+            <nav>
+                <a href="./index.html" lang="en" class="logo"><span class="logo__part">Web</span>Studio</a>
             </nav>
-            <nav class="add-nav">
-                <ul class="site-nav list">
-                    <li class="site-nav-item"><a href="./index.html" class="site-nav-link  link">Студия</a></li>
-                    <li class="site-nav-item"><a href="./portfolio.html" class="site-nav-link current-link link">Портфолио</a></li>
-                    <li class="site-nav-item"><a href="" class="site-nav-link link">Контакты</a></li>
+            <nav class="site-nav">
+                <ul class="site-nav-list list">
+                    <li class="site-nav__item"><a href="./index.html"
+                            class="site-nav__link link">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link_current link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="auth-nav list">
-                <li class=".auth-nav-item">
-                    <a href="mailto:info@devstudio.com" class="auth-link link">
-                        <svg class="auth-icon" width="16" height="12">
+                <li class=".auth-nav__item">
+                    <a href="mailto:info@devstudio.com" class="auth-nav__link link">
+                        <svg class="auth-nav__icon" width="16" height="12">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class=".auth-nav-item">
-                    <a href="tell:+380961111111" class=" auth-link link">
-                        <svg class="auth-icon" width="10" height="16">
+                <li class=".auth-nav__item">
+                    <a href="tell:+380961111111" class="auth-nav__link link">
+                        <svg class="auth-nav__icon" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -47,157 +47,157 @@
         </div>
     </header>
     <main>
-        <section class="section">
+        <section class="project section">
             <div class="container">
                 <h1 class="visually-hidden">Наши работы</h1>
-                <ul class="btn-list list">
-                    <li class="item"><button type="button" class="btn btn-secondary btn-page">Все</button></li>
-                    <li class="item"><button type="button" class="btn btn-secondary">Веб-сайты</button></li>
-                    <li class="item"><button type="button" class="btn btn-secondary">Приложения</button></li>
-                    <li class="item"><button type="button" class="btn btn-secondary">Дизайн</button></li>
-                    <li class="item"><button type="button" class="btn btn-secondary">Маркетинг</button></li>
+                <ul class="projects-navigation list">
+                    <li class="projects-navigation__item"><button type="button" class="button projects__button projects__button_current">Все</button></li>
+                    <li class="projects-navigation__item"><button type="button" class="button projects__button">Веб-сайты</button></li>
+                    <li class="projects-navigation__item"><button type="button" class="button projects__button">Приложения</button></li>
+                    <li class="projects-navigation__item"><button type="button" class="button projects__button">Дизайн</button></li>
+                    <li class="projects-navigation__item"><button type="button" class="button projects__button">Маркетинг</button></li>
                 </ul>
                 <ul class="project-list list">
-                    <li class="project-info">
-                        <a href="" class="project-link link">
+                    <li class="project__info">
+                        <a href="" class="project__link link">
                             <div class="project-thumb">
-                                <img src="./images/techcrark.jpg" alt="Главная страница сайта" width="370" height="294" class=".project-info-photo">
-                                <div class="project-thumb-description">
-                                    <p class="project-thumb-description-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                <img src="./images/techcrark.jpg" alt="Главная страница сайта" width="370" height="294" class=".project__photo">
+                                <div class="project-thumb__description">
+                                    <p class="project-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                                      посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                             </div>                            
-                            <div class="project-info-description">
-                                <h2 class="project-info-title">Технокряк</h2>
-                                <p class="project-list-type">Веб-сайт</p>
+                            <div class="project__description">
+                                <h2 class="project__title">Технокряк</h2>
+                                <p class="project__type">Веб-сайт</p>
                             </div>                            
                         </a>
                     </li>
-                    <li class="project-info">
-                        <a href="" class="project-link link">
+                    <li class="project__info">
+                        <a href="" class="project__link link">
                             <div class="project-thumb">
-                                <img src="./images/poster.jpg" alt="Главная страница сайта" width="370" height="294" class=".project-info-photo">
-                                <div class="project-thumb-description">
-                                    <p class="project-thumb-description-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <img src="./images/poster.jpg" alt="Главная страница сайта" width="370" height="294" class=".project__photo">
+                                <div class="project-thumb__description">
+                                    <p class="project-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит
                                         посетителю получить исчерпывающие сведения о компании или частном лице.</p>                    
                                 </div>
                             </div>
-                            <div class="project-info-description">
-                                <h2 class="project-info-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                                <p class="project-list-type">Дизайн</p>
+                            <div class="project__description">
+                                <h2 class="project__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                                <p class="project__type">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-info">
-                        <a href="" class="project-link link">
+                    <li class="project__info">
+                        <a href="" class="project__link link">
                             <div class="project-thumb">
-                                <img src="./images/restaurant-seafood.jpg" alt="Главная страница сайта" width="370" height="294" class=".project-info-photo">
-                                <div class="project-thumb-description">
-                                    <p class="project-thumb-description-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <img src="./images/restaurant-seafood.jpg" alt="Главная страница сайта" width="370" height="294" class=".project__photo">
+                                <div class="project-thumb__description">
+                                    <p class="project-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит
                                         посетителю получить исчерпывающие сведения о компании или частном лице.</p>                    
                                 </div>
                             </div>
-                            <div class="project-info-description">
-                                <h2 class="project-info-title">Ресторан <span lang="en">Seafood</span></h2>
-                                <p class="project-list-type">Приложение</p>
+                            <div class="project__description">
+                                <h2 class="project__title">Ресторан <span lang="en">Seafood</span></h2>
+                                <p class="project__type">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-info">
-                        <a href="" class="project-link link">
+                    <li class="project__info">
+                        <a href="" class="project__link link">
                             <div class="project-thumb">
-                                <img src="./images/project-prime.jpg" alt="Главная страница сайта" width="370" height="294" class=".project-info-photo">
-                                <div class="project-thumb-description">
-                                    <p class="project-thumb-description-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <img src="./images/project-prime.jpg" alt="Главная страница сайта" width="370" height="294" class=".project__photo">
+                                <div class="project-thumb__description">
+                                    <p class="project-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит
                                         посетителю получить исчерпывающие сведения о компании или частном лице.</p>                    
                                 </div>
                             </div>
-                            <div class="project-info-description">
-                                <h2 class="project-info-title">Проект <span lang="en">Prime</span></h2>
-                                <p class="project-list-type">Маркетинг</p>
+                            <div class="project__description">
+                                <h2 class="project__title">Проект <span lang="en">Prime</span></h2>
+                                <p class="project__type">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-info">
-                        <a href="" class="project-link link">
+                    <li class="project__info">
+                        <a href="" class="project__link link">
                             <div class="project-thumb">
-                                <img src="./images/project-boxes.jpg" alt="Главная страница сайта" width="370" height="294" class=".project-info-photo">
-                                <div class="project-thumb-description">
-                                    <p class="project-thumb-description-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <img src="./images/project-boxes.jpg" alt="Главная страница сайта" width="370" height="294" class=".project__photo">
+                                <div class="project-thumb__description">
+                                    <p class="project-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит
                                         посетителю получить исчерпывающие сведения о компании или частном лице.</p>                    
                                 </div>
                             </div>
-                            <div class="project-info-description">
-                                <h2 class="project-info-title">Проект <span lang="en">Boxes</span></h2>
-                                <p class="project-list-type">Приложение</p>
+                            <div class="project__description">
+                                <h2 class="project__title">Проект <span lang="en">Boxes</span></h2>
+                                <p class="project__type">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-info">
-                        <a href="" class="project-link link">
+                    <li class="project__info">
+                        <a href="" class="project__link link">
                             <div class="project-thumb">
-                                <img src="./images/ihnb.jpg" alt="Главная страница сайта" width="370" height="294" class=".project-info-photo">
-                                <div class="project-thumb-description">
-                                    <p class="project-thumb-description-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <img src="./images/ihnb.jpg" alt="Главная страница сайта" width="370" height="294" class=".project__photo">
+                                <div class="project-thumb__description">
+                                    <p class="project-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит
                                         посетителю получить исчерпывающие сведения о компании или частном лице.</p>                    
                                 </div>
                             </div>
-                            <div class="project-info-description">
-                                <h2 lang="en" class="project-info-title">Inspiration has no Borders</h2>
-                                <p class="project-list-type">Веб-сайт</p>
+                            <div class="project__description">
+                                <h2 lang="en" class="project-__title">Inspiration has no Borders</h2>
+                                <p class="project__type">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-info">
-                        <a href="" class="project-link link">
+                    <li class="project__info">
+                        <a href="" class="project__link link">
                             <div class="project-thumb">
-                                <img src="./images/limited-edition.jpg" alt="Главная страница сайта" width="370" height="294" class=".project-info-photo">
-                                <div class="project-thumb-description">
-                                    <p class="project-thumb-description-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <img src="./images/limited-edition.jpg" alt="Главная страница сайта" width="370" height="294" class=".project__photo">
+                                <div class="project-thumb__description">
+                                    <p class="project-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит
                                         посетителю получить исчерпывающие сведения о компании или частном лице.</p>                    
                                 </div>
                             </div>
-                            <div class="project-info-description">
-                                <h2 class="project-info-title">Издание <span lang="en">Limited Edition</span></h2>
-                                <p class="project-list-type">Дизайн</p>
+                            <div class="project__description">
+                                <h2 class="project__title">Издание <span lang="en">Limited Edition</span></h2>
+                                <p class="project__type">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-info">
-                        <a href="" class="project-link link">
+                    <li class="project__info">
+                        <a href="" class="project__link link">
                             <div class="project-thumb">
-                                <img src="./images/pjoject-lab.jpg" alt="Главная страница сайта" width="370" height="294" class=".project-info-photo">
-                                <div class="project-thumb-description">
-                                    <p class="project-thumb-description-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <img src="./images/pjoject-lab.jpg" alt="Главная страница сайта" width="370" height="294" class=".project__photo">
+                                <div class="project-thumb__description">
+                                    <p class="project-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит
                                         посетителю получить исчерпывающие сведения о компании или частном лице.</p>                    
                                 </div>
                             </div>
-                            <div class="project-info-description">
-                                <h2 class="project-info-title">Проект <span lang="en">LAB</span></h2>
-                                <p class="project-list-type">Маркетинг</p>
+                            <div class="project__description">
+                                <h2 class="project__title">Проект <span lang="en">LAB</span></h2>
+                                <p class="project__type">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-info">
-                        <a href="" class="project-link link">
+                    <li class="project__info">
+                        <a href="" class="project__link link">
                             <div class="project-thumb">
-                                <img src="./images/growing-business.jpg" alt="Главная страница сайта" width="370" height="294" class=".project-info-photo">
-                                <div class="project-thumb-description">
-                                    <p class="project-thumb-description-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <img src="./images/growing-business.jpg" alt="Главная страница сайта" width="370" height="294" class=".project__photo">
+                                <div class="project-thumb__description">
+                                    <p class="project-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит
                                         посетителю получить исчерпывающие сведения о компании или частном лице.</p>                    
                                 </div>
                             </div>
-                            <div class="project-info-description">
-                                <h2 lang="en" class="project-info-title">Growing Business</h2>
-                                <p class="project-list-type">Приложение</p>
+                            <div class="project__description">
+                                <h2 lang="en" class="project__title">Growing Business</h2>
+                                <p class="project__type">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -208,50 +208,50 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-address">
-                <a href="./index.html" lang="en" class="footer-logo logo"><span class="logo-part">Web</span>Studio</a>
+                <a href="./index.html" lang="en" class="footer__logo logo"><span class="logo__part">Web</span>Studio</a>
                 <address class="address">
                     <ul class="address-list list">
-                        <li class="list-item"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
-                                rel="noopener nofollow noreferrer" class="address-list-street">г. Киев, пр-т Леси Украинки,
+                        <li class="address__item"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
+                                rel="noopener nofollow noreferrer" class="address__street">г. Киев, пр-т Леси Украинки,
                                 26</a></li>
-                        <li class="list-item"><a href="mailto:info@devstudio.com"
-                                class=" address-list-link link">info@devstudio.com</a></li>
-                        <li class="list-item"><a href="tell:+380961111111" class=" address-list-link link">+38 096 111 11
+                        <li class="address__item"><a href="mailto:info@devstudio.com"
+                                class=" address__link link">info@devstudio.com</a></li>
+                        <li class="address__item"><a href="tell:+380961111111" class=" address__link link">+38 096 111 11
                                 11</a></li>
                     </ul>
                 </address>
             </div>
             <div class="footer-media">
-                <h3 class="footer-media-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                <h3 class="footer-media__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
                 <ul class="media-list list">
-                    <li class="item">
+                    <li class="footer-media__item">
                         <a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer"
-                            class="media-link link">
-                            <svg class="media-icon" width="20" height="20">
+                            class="footer-media__link link">
+                            <svg class="footer-media__icon" width="20" height="20">
                                 <use href="./images/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item">
+                    <li class="footer-media__item">
                         <a href="https://twitter.com" target="_blank" rel="noopener nofollow noreferrer"
-                            class="media-link link">
-                            <svg class="media-icon" width="20" height="20">
+                            class="footer-media__link link">
+                            <svg class="footer-media__icon" width="20" height="20">
                                 <use href="./images/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item">
+                    <li class="footer-media__item">
                         <a href="https://www.facebook.com" target="_blank" rel="noopener nofollow noreferrer"
-                            class="media-link link">
-                            <svg class="media-icon" width="20" height="20">
+                            class="footer-media__link link">
+                            <svg class="footer-media__icon" width="20" height="20">
                                 <use href="./images/icons.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item">
+                    <li class="footer-media__item">
                         <a href="https://www.linkedin.com" target="_blank" rel="noopener nofollow noreferrer"
-                            class="media-link link">
-                            <svg class="media-icon" width="20" height="20">
+                            class="footer-media__link link">
+                            <svg class="footer-media__icon" width="20" height="20">
                                 <use href="./images/icons.svg#linkedin"></use>
                             </svg>
                         </a>
@@ -260,13 +260,13 @@
             </div>
             <div class="footer-newslatter">
                 <form class="footer-form">
-                    <label for="newslatter" class="footer-form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                    <label for="newslatter" class="footer-form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
                     <div class="footer-form-interactive">
                         <input type="email" name="newslatter" id="newslatter" placeholder="E-mail"
-                            class="footer-form-input">
-                        <button type="submit" class="btn footer-form-button">
+                            class="footer-form__input">
+                        <button type="submit" class="button footer-form__button">
                             Подписаться
-                            <svg class="footer-bottom-icon" width="24" height="24">
+                            <svg class="footer-form__icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>

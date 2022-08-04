@@ -1,4 +1,4 @@
-.features {
+.feature {
     padding-bottom: 47px;
 }
 
@@ -8,11 +8,11 @@
     gap: 30px;
 }
 
-.feature-list-item {
+.feature__item {
     width: 270px;
 }
 
-.feature-icon {
+.feature__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
 }
 
 
-.feature-list-title {
+.feature__title {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -40,7 +40,7 @@
 
 }
 
-.feature-list p {
+.feature__description {
     margin-top: 0;
     margin-bottom: 0;
 }

@@ -1,4 +1,4 @@
-.btn {
+.button {
     display: inline-block;
 
     font-family: inherit;
@@ -8,9 +8,9 @@
     border: 0;
 }
 
-.btn.btn-primary,
-.btn.footer-form-button,
-.modal-form-button {
+.hero__button,
+.footer-form__button,
+.modal-form__button {
     padding: 10px 32px;
     min-width: 200px;
 
@@ -29,19 +29,19 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-primary:hover,
-.footer-form-button:hover,
-.modal-form-button:hover {
-    transform: scale(1.02);
+.hero__button:hover,
+.footer-form__button:hover,
+.modal-form__button:hover {
+    transform: scale(1.01);
 
 }
 
-.btn.btn-secondary.btn-page {
+.button.projects__button.projects__button_current {
     color: var(--hero-text-color);
     background-color: var(--accent-text-color);
 }
 
-.btn.btn-secondary {
+.button.projects__button {
     padding: 6px 22px;
     min-width: 73px;
 
@@ -56,27 +56,21 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
 }
 
-.btn.btn-primary:hover,
-.btn.btn-primary:focus,
-.btn.btn-secondary:hover,
-.btn.btn-secondary:focus {
+.button.hero__button:hover,
+.button.hero__button:focus,
+.button.projects__button:hover,
+.button.projects__button:focus {
     color: var(--hero-text-color);
     background-color: var(--accent-text-color);
 }
 
 
-.btn.btn-secondary:hover,
-.btn.btn-secondary:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
-.btn-list {
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 50px;
-    gap: 8px;
-}

@@ -1,14 +1,14 @@
-.team {
+.worker {
     background-color: var(--extra-backround-color);
 }
 
-.team-list {
+.worker-list {
     display: flex;
 
     gap: 30px;
 }
 
-.worker-info {
+.worker__info {
     width: 270px;
 
     background-color: var(--primary-background-color);
@@ -17,19 +17,18 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-
-.worker-info-photo {
+.worker__photo {
     display: block;
 }
 
-.worker-info-description {
+.worker__description {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.worker-info-title {
+.worker__title {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -42,7 +41,7 @@
     text-align: center;
 }
 
-.worker-info-post {
+.worker__post {
     margin-top: 0;
     margin-bottom: 16px;
 
@@ -59,12 +58,12 @@
     gap: 10px;
 }
 
-.social-list-item {
+.social-list__item {
     width: 44px;
     height: 44px;
 }
 
-.social-link {
+.social-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,22 +78,22 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+    }
 }
 
-.social-icon {
+.social-list__icon {
     fill: var(--icons-color);
 
     transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-link:hover,
-.social-link:focus {
-    background-color: var(--accent-text-color);
-}
-
-.social-link:hover>.social-icon,
-.social-link:focus>.social-icon {
-    fill: var(--primary-background-color);
+    .social-list__link:hover>&,
+    .social-list__link:focus>& {
+        fill: var(--primary-background-color);
+    }
 }

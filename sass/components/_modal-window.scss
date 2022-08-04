@@ -1,7 +1,3 @@
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
 .modal {
     position: absolute;
     top: 50%;
@@ -18,9 +14,13 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .backdrop.is-hidden & {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
 }
 
-.modal-button {
+.modal__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,17 +43,16 @@
 
 }
 
-.modal-icon {
+.modal__icon {
     fill: currentColor;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    .modal__button:hover>&,
+    .modal__button:focus>& {
+            fill: var(--accent-text-color);    
+        }
 }
 
 
-.modal-button:hover>.modal-icon,
-.modal-button:focus>.modal-icon {
-    fill: var(--accent-text-color);
-
-}
