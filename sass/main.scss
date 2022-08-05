@@ -6,19 +6,20 @@
 @import './base/section';
 @import './base/sections-title';
 
+@import './components/header';
 @import './components/logotype';
 @import './components/buttons';
 @import './components/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
+@import './components/footer';
 
 
-@import './layout/header';
+
 @import './layout/hero';
 @import './layout/features';
 @import './layout/our-activities';
 @import './layout/our-team';
 @import './layout/our-clients';
-@import './layout/footer';
 @import './layout/project-list';
 

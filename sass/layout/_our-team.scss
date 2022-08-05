@@ -2,7 +2,7 @@
     background-color: var(--extra-backround-color);
 }
 
-.worker-list {
+.worker__list {
     display: flex;
 
     gap: 30px;
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.worker__post {
+.worker__suptitle {
     margin-top: 0;
     margin-bottom: 16px;
 
@@ -56,11 +56,6 @@
     justify-content: center;
 
     gap: 10px;
-}
-
-.social-list__item {
-    width: 44px;
-    height: 44px;
 }
 
 .social-list__link {
